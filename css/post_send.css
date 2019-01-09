@@ -1,0 +1,60 @@
+body {
+    background-color: #EAE7DC;
+}
+
+.topnav {
+    background-color: #3AAFA9;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+}
+
+.input-file{
+    position: relative;
+    width: 225px;
+    color: white;
+    background-color: #85C1E9;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.div-post{
+    width: 500px;
+    position: center;
+    margin: auto;
+}
+
