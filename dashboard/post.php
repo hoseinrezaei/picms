@@ -7,19 +7,19 @@
 <body>
 <header>
     <div class="topnav">
-        <a href="./index.php">خانه</a>
-        <a href="./contact.php">ارتباط با ما</a>
-        <a href="./about.php">درباره ما</a>
+        <a href="../index.php">خانه</a>
+        <a href="../contact.php">ارتباط با ما</a>
+        <a href="../about.php">درباره ما</a>
         <?php
         if(!isset($_SESSION['user_login'])){?>
-            <a href="./login.php">ورود</a>
-            <a href="./register.php">ثبت نام</a>
+            <a href="../login.php">ورود</a>
+            <a href="../register.php">ثبت نام</a>
             <?php
         }
         ?>
         <?php
         if(isset($_SESSION['user_login']) && $_SESSION['user_login']==1){?>
-            <a href="./class/logout.php">خروج از حساب کاربری</a>
+            <a href="../class/logout.php">خروج از حساب کاربری</a>
             <?php
         }
         ?>
