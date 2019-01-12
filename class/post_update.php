@@ -27,7 +27,7 @@ $fileName = $_FILES['image']['name'];
     */
 
     if(1) {
-        echo "Your post  has been successfully update";
+
         /*
         $fileTarget = ".".ltrim($fileTarget,".");
         echo "<br>";
@@ -36,6 +36,7 @@ $fileName = $_FILES['image']['name'];
         */
         $sql = "UPDATE post SET title='$title',description='$fileDescription' WHERE id='$post_id'";
         $conn->exec($sql);
+        header("Location: ../dashboard/done.php");
     }
     else {
         echo "Sorry !!! There was an error in uploading your file";

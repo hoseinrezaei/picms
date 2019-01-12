@@ -1,0 +1,8 @@
+﻿1- Create a database called "Picmsdb" or edit "class/connect.php"
+2- creat table called "users"
+user table fild's:
+id, name, email, password, bio
+
+3- creat table called "post"
+post table fild's:
+id, post_link, title, like, create_at, image_addres, image_name, description
