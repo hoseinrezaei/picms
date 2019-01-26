@@ -1,4 +1,12 @@
+@font-face {
+  font-family: WebYekan;
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/WebYekan.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/WebYekan.ttf')  format('truetype');
+}
+
 body {
+    font-family: WebYekan;
     background-color: #EAE7DC;
 }
 

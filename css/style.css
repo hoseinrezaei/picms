@@ -1,8 +1,18 @@
+@font-face {
+  font-family: WebYekan;
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/WebYekan.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/WebYekan.ttf')  format('truetype');
+}
 
 body {
+    font-family: WebYekan;
     background-color: #EAE7DC;
 }
 
+.rtl{
+    direction: rtl;
+}
 
 .topnav {
   background-color: #3AAFA9;
@@ -157,3 +167,35 @@ body {
   direction: rtl;
 }
 
+.imgAbout{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.row{
+    border-radius: 10px;
+    width: 80%;
+    height: 200px;
+    background-color: #7DCEA0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.rowpic{
+    float: left;
+    background-color: azure;
+    width: 25%;
+    height: 100%;
+    margin-left: 25px;
+    margin-top: -15px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: white;
+}
+.rowtext{
+    padding-right: 15px;
+    
+}

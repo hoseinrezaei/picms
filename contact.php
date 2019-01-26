@@ -2,15 +2,12 @@
 <?php
 require_once("./class/connect.php");
 session_start();
-$sql = $conn->prepare("SELECT * FROM post");
-$sql->execute();
 ?>
 <html>
 	<head>
-	<link rel="stylesheet" type="text/css" href="./css/form.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	</head>
-	
-	<body>
+	<body class="rtl">
 		<header>
 			<div class="topnav">
                 <a href="./index.php">خانه</a>
@@ -33,17 +30,37 @@ $sql->execute();
 			</div>
 
 		</header>
-    <div>
-        <br>
-        <br>
+            <div class="row" >
+        <div class="rowpic">
+            <img src="image/contact.jpg" alt="گرافیست" class="imgAbout">
+        </div>
+        <div class="rowtext">
         <p>
-        اطلاعات تماس
-        آدرس: تهران – میدان انقلاب – خیابان شهدای ژاندارمری – پلاک 136 – واحد 6
-        ایمیل روابط عمومی: info [at] b-amooz.com
-        ایمیل بخش فنی: technical [at] b-amooz.com
+            اطلاعات تماس
         </p>
+        <p>
+            آدرس: تهران – میدان انقلاب – خیابان شهدای ژاندارمری – پلاک 136 – واحد 6
+        </p>
+        <p>
+            ایمیل روابط عمومی: info [at] b-amooz.com
+        </p>
+        <p>
+            ایمیل بخش فنی: technical [at] b-amooz.com
+        </p>
+        </div>
     </div>
+<h1>ما اینجاییم</h1>
+<div id="googleMap" style="width:100%;height:400px;"></div>
 
-	</body>
-
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
 </html>
